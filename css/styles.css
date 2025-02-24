@@ -1,15 +1,16 @@
 /* General Styles */
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #F5F5F5;
+    color: #333;
     margin: 0;
     padding: 0;
-    color: #333;
     line-height: 1.6;
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(to right, #00c6ff, #0072ff);
+    background: linear-gradient(to right, #1A73E8, #4285F4);
     color: white;
     text-align: center;
     padding: 50px 20px;
@@ -26,7 +27,7 @@ body {
 }
 
 .hero .btn-primary {
-    background: #0072ff;
+    background: #1A73E8;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -42,13 +43,14 @@ body {
 /* Services Section */
 .services {
     padding: 50px 20px;
-    background: #f4f4f4;
+    background: #F5F5F5;
     text-align: center;
 }
 
 .services h2 {
     margin-bottom: 20px;
     font-size: 2rem;
+    color: #1A73E8;
 }
 
 .services-container {
@@ -69,7 +71,7 @@ body {
 
 .service i {
     font-size: 2rem;
-    color: #0072ff;
+    color: #1A73E8;
     margin-bottom: 10px;
 }
 
@@ -78,48 +80,163 @@ body {
     font-size: 1.5rem;
 }
 
+/* About Us Section */
+.about-us {
+    padding: 50px 20px;
+    background-color: #FFFFFF;
+    color: #333;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-us h2 {
+    color: #1A73E8;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.about-us h3 {
+    color: #1A73E8;
+    margin-top: 30px;
+    font-size: 1.8rem;
+}
+
+.about-us ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-us ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.about-us ul li strong {
+    color: #1A73E8;
+}
+
+
+/* Benefits Section */
+.benefits {
+    padding: 50px 20px;
+    background-color: #FFFFFF;
+    color: #333;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.benefits h2 {
+    color: #1A73E8;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.benefits ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.benefits ul li {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.benefits ul li::before {
+    content: '\2022';
+    color: #1A73E8;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.benefits ul li strong {
+    color: #1A73E8;
+}
+
 /* Portfolio Section */
 .portfolio {
     padding: 50px 20px;
     text-align: center;
-}
-
-.portfolio h2 {
+    background-color: #F5F5F5;
+  }
+  
+  .portfolio h2 {
     margin-bottom: 20px;
-    font-size: 2rem;
-}
-
-.portfolio-container {
+    color: #1A73E8;
+    font-size: 2.5rem;
+  }
+  
+  .portfolio-container {
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
-}
-
-.project {
+  }
+  
+  .project {
     background: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
     text-align: center;
-}
-
-.project img {
+    width: 300px;
+  }
+  
+  .project:hover {
+    transform: scale(1.05);
+  }
+  
+  .project img {
     width: 100%;
     border-radius: 10px;
     margin-bottom: 10px;
-}
-
-.project h4 {
+  }
+  
+  .project h4 {
+    font-size: 1.5rem;
     margin-bottom: 10px;
-    font-size: 1.2rem;
-}
-
+  }
+  
+  .project p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+  
+  .btn-primary {
+    background-color: #1A73E8;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .btn-primary:hover {
+    background-color: #005bb5;
+  }
+  
 /* Contact Section */
 .contact {
     padding: 50px 20px;
-    background: #0072ff;
+    background: #1A73E8;
     color: white;
     text-align: center;
 }
@@ -147,8 +264,8 @@ body {
 }
 
 .contact button {
-    background: white;
-    color: #0072ff;
+    background: #F5F5F5;
+    color: #1A73E8;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -157,7 +274,7 @@ body {
 }
 
 .contact button:hover {
-    background: #f4f4f4;
+    background: #E0E0E0;
 }
 
 .contact-info p {
@@ -175,8 +292,8 @@ body {
 
 /* Footer */
 footer {
-    background: #333;
-    color: white;
+    background-color: #333333;
+    color: #FFFFFF;
+    padding: 15px;
     text-align: center;
-    padding: 10px 20px;
 }
